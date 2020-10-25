@@ -7,10 +7,10 @@ export default class Items extends Component {
   template () {
     const { items } = this.$state;
     return `
-        <ul>
-          ${items.map(item => `<li>${item}</li>`).join('')}
-        </ul>
-        <button>추가</button>
+      <ul>
+        ${items.map(item => `<li>${item}</li>`).join('')}
+      </ul>
+      <button>추가</button>
     `
   }
 
@@ -21,3 +21,4 @@ export default class Items extends Component {
     });
   }
 }
+
