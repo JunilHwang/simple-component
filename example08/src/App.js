@@ -70,7 +70,7 @@ export default class App extends Component {
   }
 
   deleteItem (seq) {
-    const items = [ ...this.$state.items ];;
+    const items = [ ...this.$state.items ];
     items.splice(items.findIndex(v => v.seq === seq), 1);
     this.setState({items});
   }
@@ -85,6 +85,5 @@ export default class App extends Component {
   filterItem (isFilter) {
     this.setState({ isFilter });
   }
-
 
 }
