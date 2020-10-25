@@ -3,7 +3,7 @@ import Items from "./components/Items.js";
 import ItemAppender from "./components/ItemAppender.js";
 import ItemFilter from "./components/ItemFilter.js";
 
-class App extends Component {
+export default class App extends Component {
 
   setup () {
     this.$state = {
@@ -88,5 +88,3 @@ class App extends Component {
 
 
 }
-
-new App(document.querySelector('#app'));
